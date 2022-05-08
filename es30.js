@@ -1,0 +1,1 @@
+//foor loop in array
