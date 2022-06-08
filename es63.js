@@ -1,6 +1,6 @@
 //ITERABLES
 
-//string and array are ITERABLES wears as object is not iterable
+//string and array are ITERABLES wearas as object is not iterable
 
 
 //string

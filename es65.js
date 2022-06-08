@@ -15,10 +15,47 @@
 // const person={
 //     1:"dawa", 
 //     age:"24",
-    
+
 // }
 
 // for (let key in person){
 //     console.log(typeof key)
 // }
+
+const person = new Map();
+person.set('firstName', 'John');
+person.set('lastName', 'sherpa');
+person.set(1, 'one');
+
+// console.log(person.get('firstName'));
+
+// using for of loop;
+
+// for(let key of person){
+//     console.log(Array.isArray(key));
+// }
+//destructing value;
+
+// for(let [key, value] of person){
+//     console.log(key, value); 
+// }
+
+const persons1={
+    id:1, 
+    productName:"pants"
+}
+
+const person2={
+    id:2, 
+    productName:"shirts"
+}
+
+const extraInfo=new Map();
+extraInfo.set(persons1,{quality:"textile", gender:"male"});
+extraInfo.set(person2,{quality:"whollen", gender:"female"});
+
+
+console.log(extraInfo.get(persons1).gender);
+console.log(extraInfo.get(person2).quality);
+
 
