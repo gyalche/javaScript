@@ -28,7 +28,6 @@ const user3=new CreateUser("thsring", "sherpa", "dawa@gmail.com", 30, "gokarna")
 
 // to get the key;
 for(let key in user1){
-
     // to get the key excluding the keys of prototype
     if(user1.hasOwnProperty(key)){
         console.log(key)
