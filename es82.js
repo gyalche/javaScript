@@ -21,7 +21,7 @@ function createUser(firstName, lastName, email, age, address) {
     // user.about=userMethods.about;
     // user.is18=userMethods.is18;
 
-    return user;
+    // return user;
 }
 createUser.prototype.about=function(){
             return `${this.firstName} is ${this.age} years old`
