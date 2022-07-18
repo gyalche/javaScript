@@ -29,3 +29,4 @@ setTimeout(() => {
     }, 1000);
   }, 1000);
 }, 1000);
+//pyramid of doom is same as callback hell, the only difference is it works in function;
