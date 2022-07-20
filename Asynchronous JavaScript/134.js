@@ -13,6 +13,11 @@ const myPromise = new Promise((resolve, reject) => {
     reject('couldnt complte the fried rice');
   }
 });
+
+//promise consumption will be done  by browser; so it will  be called at the last;
+//promise will be added in micrtask quee wearas the call back will be added in callback queue;
+
+//microtask task will be called before callback queue;
 myPromise
   .then((done) => {
     console.log('now the anser is ', done);
