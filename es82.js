@@ -40,6 +40,7 @@ const user3=createUser("thsring", "sherpa", "dawa@gmail.com", 30, "gokarna");
 console.log(user1)
 console.log(user1.about())
 console.log(user1.sing())
+console.log(user3.about());
 
 
 // console.log(user1.about())
