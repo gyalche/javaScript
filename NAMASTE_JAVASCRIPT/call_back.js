@@ -22,6 +22,6 @@ function attachEventListeners(){
         console.log("Button clicked", count++);
     })
 }
-attachEventListeners()
+attachEventListeners();
 
 //Garbage collection and removeElventlistener;
