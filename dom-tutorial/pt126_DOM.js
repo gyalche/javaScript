@@ -2,6 +2,7 @@ const mainButton = document.querySelector('button');
 // console.log(mainButton.textContent);
 const body = document.body;
 const currentColor = document.querySelector('.current-color');
+
 function randomColorGenerator() {
   const red = Math.floor(Math.random() * 265);
   const green = Math.floor(Math.random() * 265);
@@ -9,6 +10,7 @@ function randomColorGenerator() {
   const randomColor = `rgb(${red}, ${green}, ${blue})`;
   return randomColor;
 }
+
 mainButton.addEventListener('click', () => {
   const randomColor = randomColorGenerator();
   //   console.log(randomColor);
