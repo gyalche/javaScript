@@ -1,12 +1,12 @@
 //function statement;
-function a(){
-    console.log("function statement")
+function a() {
+  console.log('function statement');
 }
 
 //function expression;
-var b= function(){
-    console.log("function expression");
-}
+var b = function () {
+  console.log('function expression');
+};
 
 //difference between function expression and statement is hoisting;
 
@@ -19,25 +19,21 @@ var b= function(){
 // }
 
 //named function expression;
-var a= function abc(){
-
-}
+var a = function abc() {};
 
 //difference beetween paramter and argumenr;
-var c=function(a, b){//parameter;
-    console.log(a, b)
-}
-c(1,2)//argument;
+var c = function (a, b) {
+  //parameter;
+  console.log(a, b);
+};
+c(1, 2); //argument;
 
 //the value which we pass inside a function is known as argumnet;
 //the laeble or identifer whcih gets those values are known as paramters;
-
 
 //FIRST CLASS FUNCTION;
 //=> The abality to use function as value is known as first class function;
 
 //First class citizen==first class function;
 
-
 //Arrow functions;
-

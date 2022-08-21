@@ -52,7 +52,6 @@ const find = user.reduce((acc, curr) => {
 //finding all the userName whos age is less thean 75 using reduce;
 const rfind = user.reduce((acc, curr) => {
   if (acc[curr.age > 75]) {
-    // acc[curr.userName] = acc[curr.userName];
     acc[curr.userName];
   } else {
     console.log('unable to find');
