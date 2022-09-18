@@ -5,4 +5,4 @@ console.log(mainHeading.textContent)
 
 //now changing the text conetne;
 mainHeading.textContent="Please make the most out of your time.";
-console.log(mainHeading.textContent)
+console.log(mainHeading.textContent);
