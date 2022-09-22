@@ -27,3 +27,36 @@ fn().then((res) => {
   console.log(res);
 });
 console.log('last');
+
+//recursively;
+
+function importantAction(username) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(`Subscribe to ${username}`);
+    }, 0);
+  });
+}
+
+function shareTheVideo(video) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      reject(`Share the video ${video}`);
+    }, 1000);
+  });
+}
+
+function promRecurse(funPromises) {
+  if (funPromises.length === 0) return;
+  const currPromise = funPromises.shift();
+  currPromise
+    .then((res) => {
+      console.log(res);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+  promRecurse(funPromises);
+}
+
+promRecurse([importantAction('one'), shareTheVideo('two')]);
