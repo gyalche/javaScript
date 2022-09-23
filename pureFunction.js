@@ -29,3 +29,4 @@ console.log(myArray);
 // for that we have to user deep copy;
 
 // These common higher  order function are pure functions;
+
