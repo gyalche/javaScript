@@ -34,7 +34,7 @@ function PromisePolyFill(executor) {
   this.catch = function (callbacks) {
     onReject = callbacks;
     if (isRejected && !isCalled) {
-      isCalled = true;
+      called = true;
       onReject(value);
     }
     return this;

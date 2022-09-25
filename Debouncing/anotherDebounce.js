@@ -6,7 +6,6 @@ function debounce(func, delay) {
     if (timeoutId) {
       clearTimeout(timeoutId);
     }
-
     timeoutId = setTimeout(() => {
       func.call(this, ...args);
     }, delay);
