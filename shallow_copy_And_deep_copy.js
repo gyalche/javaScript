@@ -47,3 +47,16 @@ const pureAddToScoreHistory = (array, score, cloneFunc) => {
 
 const pureScoreHistory = pureAddToScoreHistory(yArray, 1998, deepClone);
 console.log(pureScoreHistory);
+
+//DEEP COPY;
+//deep copy doesnt work when you have a function or date
+let obj = {
+  name: 'Dawa',
+  address: { place: 'gokarna', city: 'kathmandu', state: 'taplejung' },
+};
+let user = JSON.parse(JSON.stringify(obj));
+obj.address.place = 'Hanumanchowk';
+
+//when deep copy doesnt work when you have a function or date than use loadsh;
+console.log('reaal obj', obj);
+console.log('deepcopy obj', user);
